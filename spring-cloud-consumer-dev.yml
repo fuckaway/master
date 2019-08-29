@@ -11,8 +11,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 8000
-        readTimeout: 8000
+        connectTimeout: 4000
+        readTimeout: 4000
 
 hystrix:
   command:
@@ -20,4 +20,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 8000
+            timeoutInMilliseconds: 1000
